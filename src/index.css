@@ -74,7 +74,7 @@ p {
 }
 
 .sponsor-shadow {
-  box-shadow: 3px 3px 0px var(--black);
+  box-shadow: 4px 4px 0px var(--pink);
   transition: all 0.1s ease-in-out;
 }
 

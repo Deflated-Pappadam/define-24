@@ -193,29 +193,31 @@ function App() {
               </g>
             </svg>
           </div>
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center bg-overlay-light">
             <h1 className="pt-20 text-5xl md:hidden md:text-6xl">Tracks</h1>
             <div className="flex w-full flex-col items-center justify-center md:flex-row">
               <div className="flex h-full w-full flex-col items-center justify-center py-5 md:pt-[200px]">
                 <img className="h-[300px]" src={HardwareImage} alt="hardware" />
                 <h2 className="text-2xl md:text-3xl">hardware</h2>
               </div>
-              <div className="flex h-full w-full flex-col items-center justify-center bg-yellow py-5 md:min-h-[900px] md:pt-[200px]">
+              <div className="flex h-full w-full flex-col items-center justify-center bg-yellow bg-overlay-light py-5 md:min-h-[900px] md:pt-[200px]">
                 <h1 className="absolute bottom-[700px] left-1/2 hidden -translate-x-1/2 md:block md:text-4xl">
                   Tracks
                 </h1>
                 <img className="h-[300px]" src={SoftwareImage} alt="software" />
                 <h2 className="text-2xl md:text-3xl">software</h2>
               </div>
-              <div className="flex h-full w-full flex-col items-center justify-center bg-pink py-5 md:min-h-[900px] md:pt-[200px]">
+              <div className="flex h-full w-full flex-col items-center justify-center bg-pink bg-overlay-light py-5 md:min-h-[900px] md:pt-[200px]">
                 <img className="h-[300px]" src={DesignImage} alt="design" />
                 <h2 className="text-2xl md:text-3xl">design</h2>
               </div>
             </div>
           </div>
         </section>
-        <section className="home_prizes flex flex-col items-center bg-darkbg bg-overlay-dark py-20 text-white bg-blend-overlay">
-          <h2 className="pb-10 text-5xl md:text-6xl">prizes</h2>
+        <section className="flex min-h-[600px] flex-col items-center bg-darkbg bg-overlay-dark py-20 text-white bg-blend-overlay">
+          <h2 className="w-full pb-20 text-center text-5xl md:w-[500px] md:text-6xl">
+            claim your rewards
+          </h2>
           <div className="flex flex-col gap-5 md:flex-row">
             <div className="flex aspect-square w-[230px] flex-col items-center justify-center rounded-lg border-4 border-pink bg-lightbg text-black">
               <div className="font-gilroy">
@@ -241,85 +243,41 @@ function App() {
         </section>
         <section className="flex flex-col items-center gap-10 bg-overlay-light py-20">
           <h2 className="text-5xl md:text-6xl">Sponsors</h2>
-          <div className="flex w-full flex-col items-center justify-center">
-            <div className="flex w-full items-center justify-between px-5 md:max-w-[900px]">
-              <div className="w-full">
-                <p className="text-xl font-black md:text-3xl">
-                  platinum sponsor
-                </p>
+          {Object.keys(sponsorsList).map((categoryKey, i) => {
+            const category = sponsorsList[categoryKey];
+            return (
+              <div
+                key={i}
+                className="flex w-full flex-col items-center justify-center"
+              >
+                <div className="flex w-full flex-col items-center justify-between md:max-w-[900px] md:flex-row">
+                  <div className="w-full text-center md:text-start">
+                    <p className="text-xl font-black md:text-3xl">
+                      {category.name}
+                    </p>
+                  </div>
+                  <div className="flex w-full items-center justify-center gap-9 md:items-start md:justify-start">
+                    {category.sponsors.map((sp, i) => {
+                      const imgUrl = getImageUrl(sp.img);
+                      return (
+                        <div
+                          className="mt-5 flex w-[full] flex-col items-center justify-center text-center font-bold"
+                          key={`${i}_${sp.name}`}
+                        >
+                          <img
+                            src={imgUrl}
+                            alt={sp.name}
+                            className="sponsor-shadow mb-2 h-[100px] w-fit max-w-[100px] rounded-lg bg-white"
+                          />
+                          <p>{sp.name}</p>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
               </div>
-              <div className="flex w-full items-start justify-start">
-                {sponsorsList.platinum.map((sp, i) => {
-                  const imgUrl = getImageUrl(sp.img);
-                  return (
-                    <div
-                      className="mt-5 flex w-[120px] flex-col items-center justify-center text-center font-bold"
-                      key={`${i}_${sp.name}`}
-                    >
-                      <img
-                        src={imgUrl}
-                        alt={sp.name}
-                        className="sponsor-shadow mb-2 aspect-square w-[80px] rounded-lg bg-white"
-                      />
-                      <p>{sp.name}</p>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-          <div className="flex w-full flex-col items-center justify-center">
-            <div className="flex w-full items-center justify-between px-5 md:max-w-[900px]">
-              <div className="w-full">
-                <p className="text-xl font-black md:text-3xl">gold sponsor</p>
-              </div>
-              <div className="flex w-full items-start justify-start">
-                {sponsorsList.gold.map((sp, i) => {
-                  const imgUrl = getImageUrl(sp.img);
-                  return (
-                    <div
-                      className="mt-5 flex w-[120px] flex-col items-center justify-center text-center font-bold"
-                      key={`${i}_${sp.name}`}
-                    >
-                      <img
-                        src={imgUrl}
-                        alt={sp.name}
-                        className="sponsor-shadow mb-2 aspect-square w-[80px] rounded-lg bg-white"
-                      />
-                      <p>{sp.name}</p>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-          <div className="flex w-full flex-col items-center justify-center">
-            <div className="flex w-full items-center justify-between px-5 md:max-w-[900px]">
-              <div className="w-full">
-                <p className="text-xl font-black md:text-3xl">
-                  educational partner
-                </p>
-              </div>
-              <div className="flex w-full items-start justify-start">
-                {sponsorsList.educational_partner.map((sp, i) => {
-                  const imgUrl = getImageUrl(sp.img);
-                  return (
-                    <div
-                      className="mt-5 flex w-[120px] flex-col items-center justify-center text-center font-bold"
-                      key={`${i}_${sp.name}`}
-                    >
-                      <img
-                        src={imgUrl}
-                        alt={sp.name}
-                        className="sponsor-shadow mb-2 aspect-square w-[80px] rounded-lg bg-white"
-                      />
-                      <p>{sp.name}</p>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
+            );
+          })}
         </section>
         <section className="flex flex-col bg-darkbg bg-overlay-dark py-10 text-center text-white bg-blend-overlay">
           <h1 className="mb-10 text-5xl md:text-6xl">gallery</h1>
