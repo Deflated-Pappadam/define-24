@@ -12,6 +12,10 @@ import { sponsorsList } from "./utils/sponsors";
 import Gallery from "./components/Gallery";
 import Footer from "./components/Footer";
 
+function getImageUrl(name: string) {
+  return new URL(`./assets/sponsors/${name}`, import.meta.url).href;
+}
+
 function App() {
   return (
     <>
@@ -246,9 +250,7 @@ function App() {
               </div>
               <div className="flex w-full items-start justify-start">
                 {sponsorsList.platinum.map((sp, i) => {
-                  const imgUrl = new URL(sp.img, import.meta.url).href;
-                  console.log(imgUrl);
-
+                  const imgUrl = getImageUrl(sp.img);
                   return (
                     <div
                       className="mt-5 flex w-[120px] flex-col items-center justify-center text-center font-bold"
@@ -273,9 +275,7 @@ function App() {
               </div>
               <div className="flex w-full items-start justify-start">
                 {sponsorsList.gold.map((sp, i) => {
-                  const imgUrl = new URL(sp.img, import.meta.url).href;
-                  console.log(imgUrl);
-
+                  const imgUrl = getImageUrl(sp.img);
                   return (
                     <div
                       className="mt-5 flex w-[120px] flex-col items-center justify-center text-center font-bold"
@@ -302,9 +302,7 @@ function App() {
               </div>
               <div className="flex w-full items-start justify-start">
                 {sponsorsList.educational_partner.map((sp, i) => {
-                  const imgUrl = new URL(sp.img, import.meta.url).href;
-                  console.log(imgUrl);
-
+                  const imgUrl = getImageUrl(sp.img);
                   return (
                     <div
                       className="mt-5 flex w-[120px] flex-col items-center justify-center text-center font-bold"
