@@ -196,18 +196,18 @@ function App() {
           <div className="flex flex-col items-center justify-center">
             <h1 className="pt-20 text-5xl md:hidden md:text-6xl">Tracks</h1>
             <div className="flex w-full flex-col items-center justify-center md:flex-row">
-              <div className="flex w-full flex-col items-center justify-center py-5 md:pt-[200px]">
+              <div className="flex h-full w-full flex-col items-center justify-center py-5 md:pt-[200px]">
                 <img className="h-[300px]" src={HardwareImage} alt="hardware" />
                 <h2 className="text-2xl md:text-3xl">hardware</h2>
               </div>
-              <div className="flex w-full flex-col items-center justify-center bg-yellow py-5 md:pt-[200px]">
-                <h1 className="absolute bottom-[400px] left-1/2 hidden -translate-x-1/2 md:block md:text-4xl">
+              <div className="flex h-full w-full flex-col items-center justify-center bg-yellow py-5 md:min-h-[900px] md:pt-[200px]">
+                <h1 className="absolute bottom-[700px] left-1/2 hidden -translate-x-1/2 md:block md:text-4xl">
                   Tracks
                 </h1>
                 <img className="h-[300px]" src={SoftwareImage} alt="software" />
                 <h2 className="text-2xl md:text-3xl">software</h2>
               </div>
-              <div className="flex w-full flex-col items-center justify-center bg-pink py-5 md:pt-[200px]">
+              <div className="flex h-full w-full flex-col items-center justify-center bg-pink py-5 md:min-h-[900px] md:pt-[200px]">
                 <img className="h-[300px]" src={DesignImage} alt="design" />
                 <h2 className="text-2xl md:text-3xl">design</h2>
               </div>
