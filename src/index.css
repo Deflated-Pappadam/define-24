@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 400;
+  src: url(./assets/fonts/Gilroy-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url(./assets/fonts/Gilroy-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url(./assets/fonts/Gilroy-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url(./assets/fonts/Gilroy-Heavy.ttf);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "LC Mogi";
+  src: url(./assets/fonts/LCMogi-C.ttf);
+  font-weight: 400;
+}
+
+:root {
+  --black: #282828;
+  --darkbg: #051a25;
+  --lightbg: #faffe7;
+  --pink: #fb2a9b;
+  --white: #fdf6f8;
+  --yellow: #ecf016;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "LC Mogi";
+}
+
+h1 {
+  font-size: 5.61rem;
+}
+
+h2 {
+  font-size: 4.209rem;
+}
+
+h3 {
+  font-size: 3.157rem;
+}
+
+h4 {
+  font-size: 2.369rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.65em;
+}
+
+.button-shadow {
+  box-shadow: 3px 3px 0px var(--pink);
+  transition: all 0.1s ease-in-out;
+}
+
+.sponsor-shadow {
+  box-shadow: 3px 3px 0px var(--black);
+  transition: all 0.1s ease-in-out;
+}
+
+.button-shadow:active {
+  box-shadow: none;
+  transform: translate(3px, 3px);
+}
+
+.sponsor-shadow:hover {
+  box-shadow: none;
+  transform: translate(3px, 3px);
+}

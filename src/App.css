@@ -1,0 +1,166 @@
+/* .home {
+  margin: 0;
+}
+
+.home_landing {
+  position: relative;
+  background-color: var(--lightbg);
+  min-height: 600px;
+}
+
+.home_marquee {
+  background-color: var(--darkbg);
+}
+
+.home_marquee h4 {
+  padding: 0px 30px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.home_landing > h1 {
+  background-color: none;
+  font-family: "LC Mogi";
+  color: var(--black);
+}
+
+.home_landing > h4 {
+  color: var(--black);
+}
+
+.wave_border {
+  width: 100%;
+  position: relative;
+}
+
+.wave_border > svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.home_landing > .wave_border {
+  position: absolute;
+  width: 100%;
+  bottom: -1px;
+}
+
+.border_bottom {
+  position: relative;
+}
+
+.home_about {
+  background-color: var(--darkbg);
+  padding: 0 90px;
+  position: relative;
+}
+
+.home_about > .sections {
+  display: flex;
+  height: 100%;
+}
+
+.home_about > .sections > .what_is > .img_placeholder {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.home_about > .sections > .what_is,
+.home_about > .sections > .why {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.home_about > .sections > .why > .img_placeholder {
+  max-width: 440px;
+}
+
+.home_about > .sections > .what_is > .content,
+.home_about > .sections > .why > .content {
+  width: 400px;
+}
+
+.home_tracks {
+  position: relative;
+  background-color: var(--lightbg);
+  width: 100%;
+  overflow: hidden;
+}
+
+.home_tracks > .wave_border {
+  width: 100%;
+  position: absolute;
+  top: -2px;
+}
+
+.home_tracks > .sections {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.home_tracks > .sections > .software {
+  background-color: var(--yellow);
+}
+
+.home_tracks > .sections > .design {
+  background-color: var(--pink);
+}
+
+.home_tracks > .sections > div {
+  padding-top: 300px;
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--black);
+}
+
+.home_tracks > .sections > div > img {
+  height: 300px;
+}
+
+.home_prizes {
+  padding: 0 5%;
+}
+
+.home_prizes > .prize_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.prizebox h1 {
+  font-family: gilroy;
+  font-weight: 900;
+}
+
+.home_prizes > .prize_container > .prizebox {
+  display: flex;
+  min-width: 250px;
+  aspect-ratio: 1/1;
+  width: 100%;
+  max-width: 500px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid var(--pink);
+  border-radius: 20px;
+  background-color: var(--lightbg);
+  color: var(--black);
+}
+
+.home_prizes > .prize_container > .prizebox > .content p {
+  font-size: 1.5rem;
+  width: 200px;
+  font-weight: 900;
+} */
