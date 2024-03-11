@@ -8,18 +8,18 @@ export default function Footer() {
     <div className="bg-overlay-light py-10 text-center">
       <h1 className="my-4 text-5xl md:hidden md:text-7xl">define.</h1>
       <div className="my-4 flex  items-center justify-around">
-        <a className="aspect-square h-fit cursor-pointer rounded-full border-4 border-black p-2 transition-all duration-200 hover:bg-black">
-          <IconLinkedin fill="var(--lightbg)" />
+        <a className="flex aspect-square h-[50px] w-[50px] cursor-pointer items-center justify-center rounded-full border-4 border-black p-2 transition-all duration-200 hover:bg-black">
+          <IconLinkedin width={20} fill="var(--lightbg)" />
         </a>
-        <a className="aspect-square h-fit cursor-pointer rounded-full border-4 border-black p-2 transition-all duration-200 hover:bg-black">
-          <IconTwitter fill="var(--lightbg)" />
+        <a className="flex aspect-square h-[50px] w-[50px] cursor-pointer items-center justify-center rounded-full border-4 border-black p-2 transition-all duration-200 hover:bg-black">
+          <IconTwitter width={20} fill="var(--lightbg)" />
         </a>
         <h1 className="hidden md:inline-block">define.</h1>
-        <a className="aspect-square h-fit cursor-pointer rounded-full border-4 border-black p-2 transition-all duration-200 hover:bg-black">
-          <IconMail fill="var(--lightbg)" />
+        <a className="flex aspect-square h-[50px] w-[50px] cursor-pointer items-center justify-center rounded-full border-4 border-black p-2 transition-all duration-200 hover:bg-black">
+          <IconMail width={20} fill="var(--lightbg)" />
         </a>
-        <a className="aspect-square h-fit cursor-pointer rounded-full border-4 border-black p-2 transition-all duration-200 hover:bg-black">
-          <IconInstagram fill="var(--lightbg)" />
+        <a className="flex aspect-square h-[50px] w-[50px] cursor-pointer items-center justify-center rounded-full border-4 border-black p-2 transition-all duration-200 hover:bg-black">
+          <IconInstagram width={20} fill="var(--lightbg)" />
         </a>
       </div>
       <p className="text-lg font-semibold">© 2024 HASH MBCET</p>
