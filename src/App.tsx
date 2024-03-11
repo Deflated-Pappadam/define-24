@@ -5,6 +5,8 @@ import WhatIsText from "./assets/what_is_text.svg";
 import WhyText from "./assets/why_text.svg";
 import HardwareImage from "./assets/hardwareimg.png";
 import SoftwareImage from "./assets/softwareimg.png";
+import BorderWaveBottom from "./assets/border_wave_b.png";
+import BorderWaveTop from "./assets/border_wave_t.png";
 import DesignImage from "./assets/designimg.png";
 import Navbar from "./components/Navbar";
 import Balloon from "./assets/balloon.png";
@@ -20,7 +22,7 @@ function App() {
   return (
     <>
       <div
-        className="relative w-full bg-lightbg font-gilroy text-black"
+        className="relative w-full overflow-hidden bg-lightbg font-gilroy text-black"
         id="home"
       >
         <Marquee
@@ -54,51 +56,11 @@ function App() {
               />
             </div>
           </div>
-
-          <div className="relative h-full w-full pt-10">
-            <svg
-              className="absolute -bottom-1 h-fit w-full"
-              width="1512"
-              height="220"
-              viewBox="0 0 1512 220"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <mask
-                id="mask0_152_1283"
-                style={{ maskType: "alpha" }}
-                maskUnits="userSpaceOnUse"
-                x="0"
-                y="0"
-                width="1512"
-                height="220"
-              >
-                <rect width="1512" height="220" fill="#D9D9D9" />
-              </mask>
-              <g mask="url(#mask0_152_1283)">
-                <path
-                  height="220"
-                  d="M274.996 54.4619C148.582 46.9931 24.3263 131.951 -22 175.364V982H1533.9V153.891C1533.9 26.5 1347.48 53.5283 1243.09 82.4701C1116.5 110.781 1025.29 202.625 812.825 175.364C547.242 141.287 433.013 63.798 274.996 54.4619Z"
-                  fill="#051A25"
-                />
-                <path
-                  d="M-73 248.501C-23 137.501 159.266 -14.0231 546 122.001C1053.5 300.502 1154 22.5013 1382 57.0013C1564.4 84.6013 1642 116.501 1658 129.001"
-                  stroke="#FDF6F8"
-                  strokeWidth="41"
-                />
-                <path
-                  d="M-73 248.501C-23 137.501 159.266 -14.0231 546 122.001C1053.5 300.502 1154 22.5013 1382 57.0013C1564.4 84.6013 1642 116.501 1658 129.001"
-                  stroke="#FDF6F8"
-                  strokeWidth="41"
-                />
-                <path
-                  d="M-73 248.501C-23 137.501 159.266 -14.0231 546 122.001C1053.5 300.502 1154 22.5013 1382 57.0013C1564.4 84.6013 1642 116.501 1658 129.001"
-                  stroke="#ECF016"
-                  strokeWidth="27"
-                />
-              </g>
-            </svg>
-          </div>
+          <img
+            className="h-auto w-[100vw] scale-x-110"
+            src={BorderWaveTop}
+            alt=""
+          />
         </section>
 
         <section className="home_about bg-darkbg bg-overlay-dark text-lightbg bg-blend-overlay">
@@ -155,44 +117,11 @@ function App() {
           </div>
         </section>
         <section className="relative">
-          <div className="wave_border relative h-full w-full">
-            <svg
-              className="absolute -top-1 h-fit w-full"
-              width="1512"
-              height="192"
-              viewBox="0 0 1512 192"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <mask
-                id="mask0_165_1296"
-                style={{ maskType: "alpha" }}
-                maskUnits="userSpaceOnUse"
-                x="0"
-                y="0"
-                width="1512"
-                height="192"
-              >
-                <path d="M0 0.5H1512V191.5H0V0.5Z" fill="#D9D9D9" />
-              </mask>
-              <g mask="url(#mask0_165_1296)">
-                <path
-                  d="M296.996 146.961C170.582 153.523 46.3263 78.8767 0 40.7331V-668H1555.9C1548.44 -471.813 1555.9 59.5998 1555.9 59.5998C1555.9 170.211 1369.48 147.781 1265.09 122.352C1138.5 97.4773 1047.29 16.7805 834.825 40.7331C569.242 70.6738 455.013 138.758 296.996 146.961Z"
-                  fill="#051A25"
-                />
-                <path
-                  d="M-27 -6.39316C23 91.1346 205.266 224.268 592 104.753C1099.5 -52.0824 1200 192.177 1428 161.864C1610.4 137.614 1688 109.586 1704 98.6028"
-                  stroke="#FDF6F8"
-                  strokeWidth="41"
-                />
-                <path
-                  d="M-27 -6.39316C23 91.1346 205.266 224.268 592 104.753C1099.5 -52.0824 1200 192.177 1428 161.864C1610.4 137.614 1688 109.586 1704 98.6028"
-                  stroke="#ECF016"
-                  strokeWidth="27"
-                />
-              </g>
-            </svg>
-          </div>
+          <img
+            className="absolute top-0 h-auto w-[120vw]"
+            src={BorderWaveBottom}
+            alt=""
+          />
           <div className="flex flex-col items-center justify-center bg-overlay-light">
             <h1 className="pt-20 text-5xl md:hidden md:text-6xl">Tracks</h1>
             <div className="flex w-full flex-col items-center justify-center md:flex-row">
