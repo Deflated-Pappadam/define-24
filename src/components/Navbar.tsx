@@ -10,7 +10,7 @@ export default function Navbar() {
   }, [size]);
 
   return (
-    <nav className="absolute left-0 top-[60px] w-full bg-transparent">
+    <nav className="absolute z-10 mt-[60px] w-full bg-transparent">
       <div className="flex h-[90px] items-center justify-between overflow-hidden  px-5">
         <img className="md:hidden" src={Logo} alt="logo" />
         <div
