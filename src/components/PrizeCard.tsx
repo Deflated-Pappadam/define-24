@@ -1,6 +1,6 @@
 import { ReactElement, JSXElementConstructor } from "react";
 
-export default function SponsorCard(props: {
+export default function PrizeCard(props: {
   title: string;
   prizes: ReactElement<any, string | JSXElementConstructor<any>> | string;
 }) {

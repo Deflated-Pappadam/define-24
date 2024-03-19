@@ -15,7 +15,7 @@ import Balloon from "./assets/balloon.png";
 import { sponsorsList } from "./utils/sponsors";
 import Gallery from "./components/Gallery";
 import Footer from "./components/Footer";
-import SponsorCard from "./components/SponsorCard";
+import PrizeCard from "./components/PrizeCard";
 import heartBalloon from "./assets/heart_balloon.png";
 import { AnimatePresence, easeInOut, motion } from "framer-motion";
 import landingBottomLeftImg from "./assets/landing_bottom_left.png";
@@ -46,7 +46,7 @@ function App() {
   return (
     <>
       <div
-        className="h-full w-full overflow-hidden  font-gilroy text-black"
+        className="relative h-full w-full overflow-hidden  font-gilroy text-black"
         id="home"
       >
         <AnimatePresence>
@@ -75,7 +75,7 @@ function App() {
                 animate={{ rotateY: 360 }}
                 exit={{ opacity: 0 }}
                 transition={{ repeat: Infinity, repeatDelay: 0.5, duration: 1 }}
-                className="h-full w-[50%]"
+                className="h-full w-[50%] max-w-[300px]"
                 xmlns="http://www.w3.org/2000/svg"
                 width="42"
                 height="38"
@@ -109,7 +109,10 @@ function App() {
           <h4 className="mx-5">#defineisback</h4>
         </Marquee>
         <Navbar />
-        <section className="relative h-full bg-lightbg bg-overlay-light pt-[100px]">
+        <section
+          id="home"
+          className="relative h-full bg-lightbg bg-overlay-light pt-[100px]"
+        >
           <img
             src={landingBottomLeftImg}
             className="absolute bottom-0 left-0 h-[120px] md:h-[200px] lg:h-auto"
@@ -161,7 +164,10 @@ function App() {
           />
         </section>
 
-        <section className="home_about bg-darkbg bg-overlay-dark text-lightbg bg-blend-overlay">
+        <section
+          id="about"
+          className="home_about bg-darkbg bg-overlay-dark text-lightbg bg-blend-overlay"
+        >
           <div className=" mx-auto flex w-[1000px] flex-col gap-10 py-10 md:flex-row md:justify-between ">
             <div className="what_is w-full">
               <div className="content max-w-[400px] px-10">
@@ -220,7 +226,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="relative">
+        <section id="theme" className="relative">
           <img
             className="absolute top-0 h-auto w-[120vw]"
             src={BorderWaveBottom}
@@ -302,7 +308,10 @@ function App() {
             </motion.div>
           </div>
         </section>
-        <section className="relative flex min-h-[600px] flex-col items-center bg-darkbg bg-overlay-dark py-20 text-white bg-blend-overlay">
+        <section
+          id="prizes"
+          className="relative flex min-h-[600px] flex-col items-center bg-darkbg bg-overlay-dark py-20 text-white bg-blend-overlay"
+        >
           <img
             className="absolute right-0 top-0 hidden w-[250px] md:block"
             src={bagImg}
@@ -312,7 +321,7 @@ function App() {
             claim your rewards
           </h2>
           <div className="flex flex-col gap-5 md:flex-row">
-            <SponsorCard
+            <PrizeCard
               title={"grand prize"}
               prizes={
                 <>
@@ -320,7 +329,7 @@ function App() {
                 </>
               }
             />
-            <SponsorCard
+            <PrizeCard
               title={"track prizes"}
               prizes={
                 <>
@@ -330,7 +339,7 @@ function App() {
                 </>
               }
             />
-            <SponsorCard
+            <PrizeCard
               title={"for everyone"}
               prizes={
                 <>
@@ -343,7 +352,10 @@ function App() {
             />
           </div>
         </section>
-        <section className="relative flex flex-col items-center gap-10 bg-overlay-light py-20">
+        <section
+          id="sponsors"
+          className="relative flex flex-col items-center gap-10 bg-overlay-light py-20"
+        >
           <h2 className="text-5xl md:text-6xl">Sponsors</h2>
           <motion.img
             initial={{ opacity: 0, translateY: "500px" }}
@@ -397,7 +409,10 @@ function App() {
             );
           })}
         </section>
-        <section className="flex flex-col bg-darkbg bg-overlay-dark py-10 text-center text-white bg-blend-overlay">
+        <section
+          id="gallery"
+          className="flex flex-col bg-darkbg bg-overlay-dark py-10 text-center text-white bg-blend-overlay"
+        >
           <h1 className="mb-10 text-5xl md:text-6xl">gallery</h1>
           <Gallery />
         </section>
