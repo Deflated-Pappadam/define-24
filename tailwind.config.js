@@ -36,8 +36,8 @@ export default {
     },
     extend: {
       backgroundImage: {
-        "overlay-light": "url('src/assets/overlay_light.png')",
-        "overlay-dark": "url('src/assets/overlay_dark.png')",
+        "overlay-light": "url('/images/overlay_light.png')",
+        "overlay-dark": "url('/images/overlay_dark.png')",
       },
       colors: {
         black: "#282828",
