@@ -385,11 +385,11 @@ function App() {
             src={heartBalloon}
             alt="heart shaped balloon"
           />
-          {Object.keys(sponsorsList).map((categoryKey, i) => {
+          {Object.keys(sponsorsList).map((categoryKey, cat_i) => {
             const category = sponsorsList[categoryKey];
             return (
               <div
-                key={i}
+                key={cat_i}
                 className="flex w-full flex-col items-center justify-center"
               >
                 <div className="flex w-full flex-col items-center justify-between md:max-w-[900px] md:flex-row">
@@ -399,18 +399,31 @@ function App() {
                     </p>
                   </div>
                   <div className="flex w-full items-center justify-center gap-9 md:items-start md:justify-start">
-                    {category.sponsors.map((sp, i) => {
+                    {category.sponsors.map((sp, sp_i) => {
                       const imgUrl = getImageUrl(sp.img);
                       return (
                         <div
-                          className="z-10 mt-5 flex w-[full] flex-col items-center justify-center text-center font-bold"
-                          key={`${i}_${sp.name}`}
+                          className="z-10 mt-5 flex flex-col items-center justify-center text-center font-bold"
+                          key={`${sp_i}_${sp.name}`}
                         >
-                          <img
-                            src={imgUrl}
-                            alt={sp.name}
-                            className="sponsor-shadow mb-2 h-[100px] w-fit max-w-[100px] rounded-lg bg-white"
-                          />
+                          <div
+                            style={
+                              cat_i < Object.keys(sponsorsList).length - 1
+                                ? {
+                                    width: `${25 * (Object.keys(sponsorsList).length - cat_i + 1)}px`,
+                                    aspectRatio: "1 / 1",
+                                  }
+                                : { width: "100%" }
+                            }
+                            className="sponsor-shadow mb-2 flex items-center justify-center rounded-lg bg-white"
+                          >
+                            <img
+                              className="h-full w-full rounded-lg"
+                              src={imgUrl}
+                              alt={sp.name}
+                            />
+                          </div>
+
                           <p>{sp.name}</p>
                         </div>
                       );
