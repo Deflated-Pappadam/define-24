@@ -142,7 +142,7 @@ function App() {
               </h4>
               <a
                 href="https://define-2.devfolio.co/"
-                className="button-shadow mt-5 rounded-full bg-yellow px-7 py-2 text-xl font-semibold"
+                className="button-shadow mt-5 inline-block rounded-full bg-yellow px-7 py-2 text-xl font-semibold"
               >
                 register now
               </a>
