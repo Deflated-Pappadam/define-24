@@ -140,9 +140,12 @@ function App() {
                 build beyond{" "}
                 <span className="font-semibold text-pink">boundaries</span>
               </h4>
-              <button className="button-shadow mt-5 rounded-full bg-yellow px-7 py-2 text-xl font-semibold">
+              <a
+                href="https://define-2.devfolio.co/"
+                className="button-shadow mt-5 rounded-full bg-yellow px-7 py-2 text-xl font-semibold"
+              >
                 register now
-              </button>
+              </a>
             </div>
             <div className="w-full">
               <motion.img
@@ -278,8 +281,14 @@ function App() {
           </div>
         </section>
         <section className="flex flex-col items-center justify-center bg-overlay-light">
-          <div className="relative mb-5 flex h-[100px] w-[33%] flex-col justify-end bg-yellow bg-overlay-light md:h-[200px]">
-            <h2 className="text-lg sm:text-3xl md:text-6xl">‘vision’</h2>
+          <div className="relative mb-5 flex h-[100px] w-[33%] flex-col justify-end  bg-overlay-light md:h-[200px]">
+            <motion.div
+              initial={{ height: 0 }}
+              whileInView={{ height: "100%" }}
+              transition={{ duration: 0.5 }}
+              className="absolute inset-0 bg-yellow bg-overlay-light"
+            />
+            <h2 className="z-10 text-lg sm:text-3xl md:text-6xl">‘vision’</h2>
             <h3 className="absolute right-full w-max text-xs sm:text-2xl md:text-4xl">
               wanda and our
             </h3>

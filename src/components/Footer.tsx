@@ -8,17 +8,29 @@ export default function Footer() {
     <div className="bg-overlay-light py-10 text-center">
       <h1 className="my-4 text-5xl md:hidden md:text-7xl">define.</h1>
       <div className="my-4 flex  items-center justify-around">
-        <a className="flex aspect-square h-[50px] w-[50px] cursor-pointer items-center justify-center rounded-full border-4 border-black p-2 transition-all duration-200 hover:bg-black">
+        <a
+          href="https://www.linkedin.com/company/definehack/"
+          className="flex aspect-square h-[50px] w-[50px] cursor-pointer items-center justify-center rounded-full border-4 border-black p-2 transition-all duration-200 hover:bg-black"
+        >
           <IconLinkedin width={20} fill="var(--lightbg)" />
         </a>
-        <a className="flex aspect-square h-[50px] w-[50px] cursor-pointer items-center justify-center rounded-full border-4 border-black p-2 transition-all duration-200 hover:bg-black">
+        <a
+          href="https://twitter.com/definehack"
+          className="flex aspect-square h-[50px] w-[50px] cursor-pointer items-center justify-center rounded-full border-4 border-black p-2 transition-all duration-200 hover:bg-black"
+        >
           <IconTwitter width={20} fill="var(--lightbg)" />
         </a>
         <h1 className="hidden md:inline-block">define.</h1>
-        <a className="flex aspect-square h-[50px] w-[50px] cursor-pointer items-center justify-center rounded-full border-4 border-black p-2 transition-all duration-200 hover:bg-black">
+        <a
+          href="hash@mbcet.ac.in"
+          className="flex aspect-square h-[50px] w-[50px] cursor-pointer items-center justify-center rounded-full border-4 border-black p-2 transition-all duration-200 hover:bg-black"
+        >
           <IconMail width={20} fill="var(--lightbg)" />
         </a>
-        <a className="flex aspect-square h-[50px] w-[50px] cursor-pointer items-center justify-center rounded-full border-4 border-black p-2 transition-all duration-200 hover:bg-black">
+        <a
+          href="https://www.instagram.com/definehack/"
+          className="flex aspect-square h-[50px] w-[50px] cursor-pointer items-center justify-center rounded-full border-4 border-black p-2 transition-all duration-200 hover:bg-black"
+        >
           <IconInstagram width={20} fill="var(--lightbg)" />
         </a>
       </div>
