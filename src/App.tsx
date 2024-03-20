@@ -102,13 +102,16 @@ function App() {
             </motion.div>
           )}
         </AnimatePresence>
-        <Marquee
-          autoFill={true}
-          className="home_marquee max-w-screen absolute top-0 z-10 h-[60px] bg-darkbg font-semibold text-white"
-        >
-          <h4 className="mx-5">#defineisback</h4>
-        </Marquee>
-        <Navbar />
+
+        <div className="absolute top-0 z-10 w-full">
+          <Marquee
+            autoFill={true}
+            className="home_marquee max-w-screen h-[60px] bg-darkbg font-semibold text-white"
+          >
+            <h4 className="mx-5">#defineisback</h4>
+          </Marquee>
+          <Navbar />
+        </div>
         <section
           id="home"
           className="relative h-full bg-lightbg bg-overlay-light pt-[100px]"

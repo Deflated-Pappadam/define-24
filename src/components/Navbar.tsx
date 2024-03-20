@@ -10,7 +10,7 @@ export default function Navbar() {
   }, [size]);
 
   return (
-    <nav className="absolute z-10 mt-[60px] w-full bg-transparent">
+    <nav className="relative w-full">
       <div className="flex h-[90px] items-center justify-between overflow-hidden  px-5">
         <img className="md:hidden" src={Logo} alt="logo" />
         <div
@@ -20,7 +20,7 @@ export default function Navbar() {
             color: `${navOpen ? "#faffe7" : "#051a25"}`,
             display: `${navOpen || size.width! >= 768 ? "flex" : "none"}`,
             position: `${navOpen ? "absolute" : "relative"}`,
-            top: `${navOpen ? "80px" : "initial"}`,
+            top: `${navOpen ? "100%" : "initial"}`,
             left: `${navOpen ? "0px" : "initial"}`,
             zIndex: "100",
           }}
