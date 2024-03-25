@@ -22,6 +22,10 @@ export const sponsorsList: {
         img: "devfolio.svg",
       },
       {
+        name: "Axure",
+        img: "axure.svg",
+      },
+      {
         name: "O'Reilly",
         img: "oreilly.svg",
       },
