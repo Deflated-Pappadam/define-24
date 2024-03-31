@@ -1,5 +1,8 @@
 export const sponsorsList: {
-  [key: string]: { name: string; sponsors: { name: string; img: string }[] };
+  [key: string]: {
+    name: string;
+    sponsors: { name: string; img: string; website?: string }[];
+  };
 } = {
   platinum: {
     name: "platinum sponsor",
@@ -7,10 +10,12 @@ export const sponsorsList: {
       {
         name: "UST",
         img: "ust.svg",
+        website: "https://www.ust.com/",
       },
       {
         name: "Wolfram",
         img: "wolfram.png",
+        website: "https://www.wolfram.com/",
       },
     ],
   },
@@ -20,14 +25,17 @@ export const sponsorsList: {
       {
         name: "Devfolio",
         img: "devfolio.svg",
+        website: "https://devfolio.co/discover",
       },
       {
         name: "Axure",
         img: "axure.svg",
+        website: "https://www.axure.com/",
       },
       {
         name: "O'Reilly",
         img: "oreilly.svg",
+        website: "https://www.oreilly.com/",
       },
     ],
   },
@@ -37,10 +45,12 @@ export const sponsorsList: {
       {
         name: "Polygon",
         img: "polygon.svg",
+        website: "https://polygon.technology/",
       },
       {
         name: "Ethindia",
         img: "ethindia.png",
+        website: "https://ethindia.co/",
       },
     ],
   },
@@ -50,6 +60,11 @@ export const sponsorsList: {
       {
         name: "Interview Cake",
         img: "interview_cake.png",
+      },
+      {
+        name: ".xyz",
+        img: "xyz.svg",
+        website: "https://gen.xyz/",
       },
       {
         name: "ZulipChat",

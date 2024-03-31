@@ -42,6 +42,7 @@ function App() {
     }, 5000);
     window.addEventListener("load", handleLoading);
     return () => window.removeEventListener("load", handleLoading);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <>
@@ -402,7 +403,8 @@ function App() {
                       {category.sponsors.map((sp, sp_i) => {
                         const imgUrl = getImageUrl(sp.img);
                         return (
-                          <div
+                          <a
+                            href={sp.website}
                             className="z-10 mt-5 flex flex-col items-center justify-center text-center font-bold"
                             key={`${sp_i}_${sp.name}`}
                           >
@@ -425,7 +427,7 @@ function App() {
                             </div>
 
                             <p>{sp.name}</p>
-                          </div>
+                          </a>
                         );
                       })}
                     </div>
