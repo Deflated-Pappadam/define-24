@@ -107,7 +107,7 @@ function App() {
           <div className="absolute top-0 z-10 w-full">
             <Marquee
               autoFill={true}
-              className="home_marquee max-w-screen h-[60px] bg-darkbg font-semibold text-white"
+              className="home_marquee max-w-screen h-[60px] bg-darkbg font-bold text-white"
             >
               <h4 className="mx-5">#defineisback</h4>
             </Marquee>
