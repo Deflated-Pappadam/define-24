@@ -22,7 +22,7 @@ export default function Footer() {
         </a>
         <h1 className="hidden md:inline-block">define.</h1>
         <a
-          href="hash@mbcet.ac.in"
+          href="mailto:hash@mbcet.ac.in"
           className="flex aspect-square h-[50px] w-[50px] cursor-pointer items-center justify-center rounded-full border-4 border-black p-2 transition-all duration-200 hover:bg-black"
         >
           <IconMail width={20} fill="var(--lightbg)" />
