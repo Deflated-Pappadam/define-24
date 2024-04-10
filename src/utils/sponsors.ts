@@ -76,8 +76,16 @@ export const sponsorsList: {
     name: "community partner",
     sponsors: [
       {
+        name: "GDSC MBCET",
+        img: "gdsc.svg",
+      },
+      {
         name: "Blockchained India",
         img: "blochained_india.svg",
+      },
+      {
+        name: "CSI SB MBCET",
+        img: "csi.png",
       },
     ],
   },

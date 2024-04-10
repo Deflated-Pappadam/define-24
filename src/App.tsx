@@ -415,7 +415,7 @@ function App() {
                                       width: `${25 * (Object.keys(sponsorsList).length - cat_i + 1)}px`,
                                       aspectRatio: "1 / 1",
                                     }
-                                  : { width: "100%" }
+                                  : { height: "60px" }
                               }
                               className="sponsor-shadow mb-2 flex items-center justify-center rounded-lg bg-white"
                             >
