@@ -358,7 +358,6 @@ function App() {
                   <>
                     <p className="text-xl">Swags</p>
                     <p className="text-xl">Stickers</p>
-                    <p className="text-xl">T-Shirts</p>
                     <p className="text-xl">Certificate of Participation</p>
                   </>
                 }
