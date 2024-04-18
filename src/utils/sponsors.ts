@@ -37,6 +37,11 @@ export const sponsorsList: {
         img: "oreilly.svg",
         website: "https://www.oreilly.com/",
       },
+      {
+        name: "HoverRobotix",
+        img: "hoverrobotix.png",
+        website: "https://hoverrobotix.com/",
+      },
     ],
   },
   silver: {
@@ -87,6 +92,11 @@ export const sponsorsList: {
         name: "CSI SB MBCET",
         img: "csi.png",
       },
+      {
+        name: "EmergeX",
+        img: "emergeX.jpg",
+      },
+      
     ],
   },
 };
