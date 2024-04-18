@@ -363,6 +363,9 @@ function App() {
                 }
               />
             </div>
+            <h2 className="w-full pt-20 text-center text-xl md:text-3xl">
+              upto 3L worth of prizes
+            </h2>
           </section>
           <section
             id="sponsors"
