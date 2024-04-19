@@ -414,15 +414,16 @@ function App() {
                               style={
                                 cat_i < Object.keys(sponsorsList).length - 1
                                   ? {
+                                      transform: `transform(scale(${100 + (Object.keys(sponsorsList).length - cat_i + 1)}))`,
                                       width: `${25 * (Object.keys(sponsorsList).length - cat_i + 1)}px`,
-                                      aspectRatio: "1 / 1",
+                                      aspectRatio: '1/1'
                                     }
                                   : { height: "60px" }
                               }
-                              className="sponsor-shadow mb-2 flex items-center justify-center rounded-lg bg-white"
+                              className="sponsor-shadow mb-2 flex items-center justify-center rounded-lg bg-white w-auto"
                             >
                               <img
-                                className="h-full w-full rounded-lg"
+                                className="h-full w-full rounded-lg object-contain"
                                 src={imgUrl}
                                 alt={sp.name}
                               />

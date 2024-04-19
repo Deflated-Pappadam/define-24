@@ -4,14 +4,23 @@ export const sponsorsList: {
     sponsors: { name: string; img: string; website?: string }[];
   };
 } = {
-  platinum: {
-    name: "platinum sponsor",
+  title: {
+    name: "title sponsor",
     sponsors: [
       {
         name: "UST",
         img: "ust.svg",
         website: "https://www.ust.com/",
       },
+      {
+        name: "MBCETAA",
+        img: "mbcetaa.png",
+      },
+    ],
+  },
+  platinum: {
+    name: "platinum sponsor",
+    sponsors: [
       {
         name: "Wolfram",
         img: "wolfram.png",
@@ -48,6 +57,19 @@ export const sponsorsList: {
     name: "silver sponsor",
     sponsors: [
       {
+        name: "RevUp",
+        img: "revup.png",
+      },
+      {
+        name: "MentorX",
+        img: "mentorX.png",
+        website: "https://thementorx.com/",
+      },
+      {
+        name: "Lucr8 Ventures",
+        img: "lucr8.jpg",
+      },
+      {
         name: "Polygon",
         img: "polygon.svg",
         website: "https://polygon.technology/",
@@ -65,6 +87,7 @@ export const sponsorsList: {
       {
         name: "Interview Cake",
         img: "interview_cake.png",
+        website: "https://www.interviewcake.com/",
       },
       {
         name: ".xyz",
@@ -74,6 +97,7 @@ export const sponsorsList: {
       {
         name: "ZulipChat",
         img: "zulip.png",
+        website: "https://zulip.com/",
       },
     ],
   },
@@ -83,10 +107,21 @@ export const sponsorsList: {
       {
         name: "GDSC MBCET",
         img: "gdsc.svg",
+        website: "https://gdscmbcet.com/"
       },
       {
         name: "Blockchained India",
         img: "blochained_india.svg",
+        website: "https://www.blockchainedindia.com/"
+      },
+      {
+        name: "IEEE MBCET",
+        img: "ieee.png",
+        website: "https://ieeembcet.github.io/ieee_mbcet/"
+      },
+      {
+        name: "IEDC MBCET",
+        img: "iedc.jpg",
       },
       {
         name: "CSI SB MBCET",
@@ -95,6 +130,7 @@ export const sponsorsList: {
       {
         name: "EmergeX",
         img: "emergeX.jpg",
+        website: "https://x.com/emergexofficial"
       },
       
     ],
