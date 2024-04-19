@@ -5,7 +5,7 @@ export default function PrizeCard(props: {
   prizes: ReactElement<any, string | JSXElementConstructor<any>> | string;
 }) {
   return (
-    <div className="perspective group aspect-square h-[230px] cursor-pointer bg-transparent">
+    <div className="perspective group aspect-square h-[250px] cursor-pointer bg-transparent">
       <div className="preserve-3d group-hover:rotate-y-180 relative h-full w-full duration-1000">
         <div className="backface-hidden absolute flex h-full w-full flex-col items-center justify-center  rounded-lg bg-pink text-center">
           <h3 className="w-[60%] font-gilroy text-4xl font-extrabold leading-tight">
